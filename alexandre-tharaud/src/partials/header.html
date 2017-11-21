@@ -1,0 +1,19 @@
+<header id="header">
+  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+
+  <div class="top-bar" id="example-menu">
+    <div class="top-bar-left"  id="example-menu">
+      <ul class="dropdown menu  align-center"  id="example-menu" data-dropdown-menu data-magellan>
+        <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="index.html">Home</a> </li>
+        <li><a href="">News</a></li>
+        <li><a href="">Concerts</a></li>
+        <li><a href="">Music</a></li>
+        <li {{#ifpage 'biographie'}} class="active" {{/ifpage}}><a href="biographie.html">Bio</a></li>
+        <li><a href="">Links</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
