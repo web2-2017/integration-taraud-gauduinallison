@@ -1,27 +1,42 @@
-<header id="header">
-  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-    <div class="title-bar-title">Menu</div>
-  </div>
-
-  <div class="top-bar" id="example-menu">
-    <div class="align-left">
-      <img src="../assets/img/logo.png" alt="">
-    </div>
-    <div class="top-bar-left"  id="example-menu">
-      <ul class="dropdown menu  align-center"  id="example-menu" data-dropdown-menu data-magellan>
-        <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="index.html">Home</a> </li>
-        <li><a href="">News</a></li>
-        <li><a href="">Concerts</a></li>
-        <li><a href="">Music</a>
+<header>
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="medium-3 cell">
+        <img src="../assets/img/logo.png" alt="">
+      </div>
+      <div class="medium-6 cell align-self-middle ">
+        <nav>
+          <ul class="menu dropdown align-center" data-dropdown-menu data-magellan>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Concerts</a></li>
+            <li>
+              <a href="">Music</a>
+              <ul>
+                <li><a href="">Disques</a></li>
+                <li><a href="">Vidéos</a></li>
+              </ul>
+            </li>
+            <li><a href="">Bio</a></li>
+            <li><a href="">Links</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="medium-3 cell text-right align-self-middle">
+        <ul class="menu vertical dropdown align-center" data-dropdown-menu data-magellan>
+          <li>
+            <a href="">
+              <img src="../assets/img/search.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="">EN</a>
             <ul>
-              <li>Disques</li>
-              <li>Vidéos</li>
+              <li><a href="">EN</a></li>
+              <li><a href="">FR</a></li>
             </ul>
-        </li>
-        <li {{#ifpage 'biographie'}} class="active" {{/ifpage}}><a href="biographie.html">Bio</a></li>
-        <li><a href="">Links</a></li>
-      </ul>
+          </li>
+      </div>
     </div>
   </div>
 </header>
